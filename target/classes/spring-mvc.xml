@@ -24,12 +24,12 @@
     @Controller，@Service，@Repository等注解标记的组件。
        而<mvc:annotation-driven/>是告知Spring，我们启用注解驱动。然后Spring会自动为我们注册上面说到的几个Bean到工厂中，来处理我们的请求。-->
     <mvc:annotation-driven>  
-        <mvc:message-converters>  
+        <!-- <mvc:message-converters>  
             <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />  
             <bean class="org.springframework.http.converter.FormHttpMessageConverter" />  
             <bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter" />  
             <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />  
-        </mvc:message-converters>  
+        </mvc:message-converters> -->  
     </mvc:annotation-driven>  
           
           

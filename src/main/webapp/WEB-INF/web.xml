@@ -13,9 +13,9 @@
 </context-param>  
   
 <!-- spring框架的入口，启动spring框架 -->
-<listener>  
+ <listener>  
     <description>spring监听器</description>  
-    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>  
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>  <!-- 初始化的上下文加载的Bean是对于整个应用程序共享的，不管是使用什么表现层技术，一般如DAO层、Service层Bean； -->
 </listener>  
   
 <!-- 防止spring内存溢出监听器 -->  
@@ -27,7 +27,7 @@
 <servlet>  
     <description>spring mvc servlet</description>  
     <servlet-name>springMvc</servlet-name>  
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>  
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class><!-- 加载mvc Bean,Controller、HandlerMapping、HandlerAdapter等等 -->  
     <init-param>  
         <description>spring mvc 配置文件</description>  
         <param-name>contextConfigLocation</param-name>  
