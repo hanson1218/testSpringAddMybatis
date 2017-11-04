@@ -1,7 +1,0 @@
-com\lhs\controller\LoginController.class
-com\lhs\service\UserService.class
-com\lhs\dao\UserDao.class
-com\lhs\user\entity\User.class
-com\lhs\controller\TestSpringContrller.class
-com\lhs\service\UserServiceImpl.class
-com\lhs\controller\TestDubbo.class
